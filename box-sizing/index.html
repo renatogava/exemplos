@@ -5,8 +5,11 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="box"></div>
-    </div>
+    <!-- Box-Sizing cotrola como o width e height de um elemento é calculado.
+        content-box é o padrão mas é estranho, pois não leva em consideração padding e border.
+        border-box é mais intuitivo: ela inclui padding e border. -->
+    <div class="box content-box"></div>
+
+    <div class="box border-box"></div>
 </body>
 </html>
