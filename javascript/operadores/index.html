@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Operadores</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+            <button id="btnTestarOperadores">Testar Operadores</button>
+        </div>
+    </div>
+
+    <script>
+
+        document.getElementById("btnTestarOperadores").onclick =
+
+            function (e) {
+
+                //atribuição de valores a variáveis
+                let x = 1;
+                let y = 2;
+
+                //operadores aritméticos básicos
+                let soma = x + y;
+                let subtracao = x - y;
+                let divisao = x / y;
+                let multiplicacao = x * y;
+
+                console.log(soma);
+                console.log(subtracao);
+                console.log(divisao);
+                console.log(multiplicacao);
+
+                //operadores comparativos somente o valor, ignorando o tipo
+                if (x == "1") {
+                    console.log("1 é igual a \"1\"");
+                }
+                else {
+                    console.log("1 é igual a \"1\"");
+                }
+
+                if (y === "2") {
+                    console.log("2 é igual a \"2\"");
+                }
+                else { 
+                    console.log("2 não é igual a \"2\"");
+                }
+            };
+
+    </script>
+</body>
+</html>
