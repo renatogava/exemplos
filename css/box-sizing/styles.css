@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border: 5px solid;
+    display: inline-block
+}
+
+    .box.content-box {
+        box-sizing: content-box;
+        background: red
+    }
+
+    .box.border-box {
+        box-sizing: border-box;
+        background: green
+    }

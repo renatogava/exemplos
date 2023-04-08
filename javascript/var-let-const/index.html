@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Var, Let e Const</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+            <button id="btnTestarVar">Testar var</button>
+
+            <button id="btnTestarLet">Testar let</button>
+
+            <button id="btnTestarConst">Testar const</button>
+        </div>
+    </div>
+
+    <script>
+
+        document.getElementById("btnTestarVar").onclick =
+
+            function (e) {
+
+                //var: escopo de função. Pode ser declarada mais de uma vez, no mesmo escopo ou em outro
+                var carro = "Honda Fit";
+
+                var carro = "Honda Fit";
+
+                if (carro == "Honda Fit") {
+                    var carro = "Fiat Palio";
+                }
+
+                console.log(carro);
+            };
+
+        document.getElementById("btnTestarLet").onclick =
+
+            function (e) {
+
+                //let: escopo de bloco. Não pode ser declarada mais de uma vez no mesmo escopo
+                let carro = "Honda Fit";
+
+                //let carro = "Honda Fit";
+
+                if (carro == "Honda Fit") {
+                    let carro = "Fiat Palio";
+                }
+
+                console.log(carro);
+            };
+
+        document.getElementById("btnTestarConst").onclick =
+
+            function (e) {
+
+                //const: escopo de bloco. Valor da variável não pode ser alterado. Não pode ser declarada mais de uma vez no mesmo escopo
+                const carro = "Honda Fit";
+
+                if (carro == "Honda Fit") {
+                    carro = "Fiat Palio";
+                }
+
+                console.log(carro);
+            };
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    border: 2px dotted;
+    margin: 65px
+}
+
+    .container .box {
+        width: 200px;
+        height: 200px;
+        background: red;
+        margin: 2px
+    }
+
+        .container .box.green {
+            background: green;
+            position: relative;
+            top: 15px;
+            left: 15px
+        }
+
+        .container .box.blue {
+            background: blue;
+            position: absolute;
+            top: 15px;
+            left: 15px
+        }
+
