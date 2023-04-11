@@ -20,6 +20,7 @@
 
         .container .box.none {
             display: none;
+            background: yellow
         }
 
         .container .box.inline {
